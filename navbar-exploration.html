@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev.lib - Gabriel Mureșan</title>
+    <link rel="icon" type="image/x-icon" href="src/img/boost-img.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/custom.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/script.js"></script>
+    <script src="src/frosted-navbar.js"></script>
+  </head>
+    <!-- NAV BAR CONTENT -->
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-exploration" id="navExplore"> 
+      <div class="container">
+        <a class="navbar-brand" href="index.php">dev.lib</a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link navbar-link-devlib" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link-devlib" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-link-devlib" href="explore.html">Explore Assets</a>
+            </li>
+          </ul>
+
+          <div class="nav navbar-nav navbar-right">
+            <!-- <button
+              class="btn btn-secondary m-1 btn-publish"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+              onclick="window.location='sign-up.html';"
+            >
+              Publish Asset ONLY IF LOGGED IN
+            </button> -->
+
+            <div class="dropstart">
+              <button
+                class="btn btn-primary m-1 shadow-none"
+                type="button"
+                id="dropdownMenuProfile"
+                data-bs-toggle="dropdown"
+              >
+                @gabrielmuresan
+              </button>
+
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdownMenuProfile"
+              >
+                <li>
+                  <a class="dropdown-item" href="profile.html">Profile</a>
+                </li>
+                <li><a class="dropdown-item">Publish Asset</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr class="divider-light" />
+
+    <!-- PROFILE SECTION -->
+    <div class="container-fluid profile-section row">
+
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-3 left-nav-profile row">
+        <div class="col-5">
+          <img
+            width="150px"
+            class="rounded-circle profile-picture-display"
+            src="src/img/profile-picture.png"
+          />
+        </div>
+        <div class="col-7 user-details">
+          <h1 class="display-4 full-name-profile">Gabriel Muresan</h1>
+          <h2 class="display-4 username-profile">@gabrielmuresan</h2>
+        </div>
+        <div class="description-profile-container col-sm-12 col-md">
+          <p class="description-profile">
+            Self-taught graphic designer, computer science student. Always
+            lookin' for more to learn.
+          </p>
+        </div>
+        <!-- TAGS SEGMENT -->
+        <div class="tags-profile-container col-12">
+          <!-- TAGS HEADER -->
+          <h4 class="dispaly-4 profile-headers tags-header">Tags</h4>
+          <!-- HERE ARE TAGS -->
+          <span class="badge rounded-pill user-tag user-tag-pro">PRO</span>
+          <span class="badge rounded-pill user-tag user-tag-2021-award"
+            >2021 BEST RATED ASSETS</span
+          >
+          <span class="badge rounded-pill user-tag user-tag-high-rating"
+            >HIGH RATED</span
+          >
+        </div>
+        <button class="btn btn-primary m-1 edit-profile-button shadow-none" type="button" onclick="window.location='edit-profile.html';">
+          Edit profile
+        </button>
+        <button class="btn btn-outline-danger m-1 edit-profile-button shadow-none" type="button" onclick="window.location='index.html';">
+          Sign out
+        </button>
+      </div>
+
+      <div class="col-lg-5 main-content-profile row">
+        <!-- HEADER -->
+        <div class="col-12 header-container-profile">
+          <h4
+            class="display-4 profile-headers profile-section-header top-assets"
+          >
+            Top Assets
+          </h4>
+        </div>
+        <!-- TOP ASSETS SECTION -->
+        <div class="explore-section container-fluid col-12 row row-cols-1 row-cols-lg-3 g-4">
+          <!-- POST IN COLUMN -->
+          <div class="col asset-column">
+            <div class="card asset-post bg-dark text-white">
+                    <!-- FAVOURITE ICON - MUST FIX -->
+                    <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                    <!-- FAVOURITE ICON - MUST FIX -->
+              <img
+                src="src/img/saly-asset.png"
+                class="card-img asset-card-bg"
+                alt="Asset Image"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                >
+                <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                <!-- HREF CHANGES DEPENDING ON ASSET -->
+                <a href="index.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- POST IN COLUMN -->
+          <div class="col asset-column">
+            <div class="card asset-post bg-dark text-white">
+                    <!-- FAVOURITE ICON - MUST FIX -->
+                    <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                    <!-- FAVOURITE ICON - MUST FIX -->
+              <img
+                src="src/img/saly-asset.png"
+                class="card-img asset-card-bg"
+                alt="Asset Image"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                >
+                <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                <!-- HREF CHANGES DEPENDING ON ASSET -->
+                <a href="index.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- POST IN COLUMN -->
+          <div class="col asset-column">
+            <div class="card asset-post bg-dark text-white">
+                    <!-- FAVOURITE ICON - MUST FIX -->
+                    <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                    <!-- FAVOURITE ICON - MUST FIX -->
+              <img
+                src="src/img/saly-asset.png"
+                class="card-img asset-card-bg"
+                alt="Asset Image"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                >
+                <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                <!-- HREF CHANGES DEPENDING ON ASSET -->
+                <a href="index.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- POST IN COLUMN -->
+          <div class="col asset-column">
+            <div class="card asset-post bg-dark text-white">
+                    <!-- FAVOURITE ICON - MUST FIX -->
+                    <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                    <!-- FAVOURITE ICON - MUST FIX -->
+              <img
+                src="src/img/saly-asset.png"
+                class="card-img asset-card-bg"
+                alt="Asset Image"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                >
+                <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                <!-- HREF CHANGES DEPENDING ON ASSET -->
+                <a href="index.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- HEADER -->
+        <div class="col-12 header-container-profile">
+          <h4
+            class="display-4 profile-headers profile-section-header top-assets"
+          >
+            Favourites
+          </h4>
+        </div>
+        <!-- NO CONTENT -->
+          <div class="explore-section container-fluid col-12 row row-cols-1 row-cols-lg-3 g-4">
+            <!-- POST IN COLUMN -->
+            <div class="col asset-column">
+              <div class="card asset-post bg-dark text-white">
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                      <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                <img
+                  src="src/img/saly-asset.png"
+                  class="card-img asset-card-bg"
+                  alt="Asset Image"
+                />
+                <div
+                  class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                  >
+                  <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                  <!-- HREF CHANGES DEPENDING ON ASSET -->
+                  <a href="index.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- POST IN COLUMN -->
+            <div class="col asset-column">
+              <div class="card asset-post bg-dark text-white">
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                      <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                <img
+                  src="src/img/saly-asset.png"
+                  class="card-img asset-card-bg"
+                  alt="Asset Image"
+                />
+                <div
+                  class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                  >
+                  <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                  <!-- HREF CHANGES DEPENDING ON ASSET -->
+                  <a href="index.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- POST IN COLUMN -->
+            <div class="col asset-column">
+              <div class="card asset-post bg-dark text-white">
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                      <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                <img
+                  src="src/img/saly-asset.png"
+                  class="card-img asset-card-bg"
+                  alt="Asset Image"
+                />
+                <div
+                  class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                  >
+                  <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                  <!-- HREF CHANGES DEPENDING ON ASSET -->
+                  <a href="index.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- POST IN COLUMN -->
+            <div class="col asset-column">
+              <div class="card asset-post bg-dark text-white">
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                      <!-- <div class="favourite-icon" id="favouriteIconContainer"><img id="favouriteIcon" width="32px" src="src/img/heart.svg" class="svg-heart"></div> -->
+                      <!-- FAVOURITE ICON - MUST FIX -->
+                <img
+                  src="src/img/saly-asset.png"
+                  class="card-img asset-card-bg"
+                  alt="Asset Image"
+                />
+                <div
+                  class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                  >
+                  <h5 class="card-title asset-name asset-name-user-profile">Saly's Illustrations</h5>
+                  <!-- HREF CHANGES DEPENDING ON ASSET -->
+                  <a href="index.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+
+        <div class="col-12 header-container-profile">
+          <h4
+            class="display-4 profile-headers profile-section-header top-assets"
+          >
+            Activity History
+          </h4>
+        </div>
+        </div></div>
+
+      <!-- MARGIN BY COL -->
+      <div class="col-lg-2"></div>
+
+
+    <!-- FOOTER -->
+    <div class="container footer-container">
+      <footer class="row row-cols-1 row-cols-lg-5 border-top footer-content">
+        <div class="col copyright-footer"></div>
+        <div class="col copyright-footer">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <p class="text-muted">© 2022 - dev.lib</p>
+        </div>
+
+        <div class="col">
+          <h5 class="section-footer">Product</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Team</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Resources</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Roadmap</a>
+            </li>
+            >
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5 class="section-footer">Support</h5>
+          <ul class="nav flex-column">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Documentation</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Forum</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Guidelines</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Contact</a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5 class="section-footer">Platform</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link p-0 text-muted">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Blog</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Inclusion</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
