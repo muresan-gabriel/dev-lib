@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require('../vendor/autoload.php');
+
 include("connection.php");
 include("functions.php");
 ?>
