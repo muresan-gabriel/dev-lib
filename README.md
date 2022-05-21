@@ -5,10 +5,10 @@
     <h3>dev.lib</h3>
   </a>
 
-  <h3 align="center">Open-source Assets</h3>
+  <h3 align="center">Open-Source Assets</h3>
 
   <p align="center">
-    HTML / CSS only.
+    PHP APP
     <br />
     <a href="https://github.com/muresan-gabriel/dev.lib"><strong>Explore the docs »</strong></a>
     <br />
